@@ -653,8 +653,8 @@ void lcd_commands()
 		{
 			enquecommand_P(PSTR("M107"));
 			enquecommand_P(PSTR("M104 S210"));
-			enquecommand_P(PSTR("M140 S55"));
-			enquecommand_P(PSTR("M190 S55"));
+			enquecommand_P(PSTR("M140 S60"));
+			enquecommand_P(PSTR("M190 S60"));
 			enquecommand_P(PSTR("M109 S210"));
 			enquecommand_P(PSTR("T0"));
 			enquecommand_P(MSG_M117_V2_CALIBRATION);
@@ -917,8 +917,8 @@ void lcd_commands()
 		{
 			enquecommand_P(PSTR("M107"));
 			enquecommand_P(PSTR("M104 S210"));
-			enquecommand_P(PSTR("M140 S55"));
-			enquecommand_P(PSTR("M190 S55"));
+			enquecommand_P(PSTR("M140 S60"));
+			enquecommand_P(PSTR("M190 S60"));
 			enquecommand_P(PSTR("M109 S210"));
 			enquecommand_P(MSG_M117_V2_CALIBRATION);
 			enquecommand_P(PSTR("G87")); //sets calibration status
@@ -1431,9 +1431,9 @@ static void lcd_preheat_menu()
 
   MENU_ITEM(back, MSG_MAIN, lcd_main_menu);
 
-  MENU_ITEM(function, PSTR("ABS  -  " STRINGIFY(ABS_PREHEAT_HOTEND_TEMP) "/" STRINGIFY(ABS_PREHEAT_HPB_TEMP)), lcd_preheat_abs);
   MENU_ITEM(function, PSTR("PLA  -  " STRINGIFY(PLA_PREHEAT_HOTEND_TEMP) "/" STRINGIFY(PLA_PREHEAT_HPB_TEMP)), lcd_preheat_pla);
   MENU_ITEM(function, PSTR("PET  -  " STRINGIFY(PET_PREHEAT_HOTEND_TEMP) "/" STRINGIFY(PET_PREHEAT_HPB_TEMP)), lcd_preheat_pet);
+  MENU_ITEM(function, PSTR("ABS  -  " STRINGIFY(ABS_PREHEAT_HOTEND_TEMP) "/" STRINGIFY(ABS_PREHEAT_HPB_TEMP)), lcd_preheat_abs);
   MENU_ITEM(function, PSTR("HIPS -  " STRINGIFY(HIPS_PREHEAT_HOTEND_TEMP) "/" STRINGIFY(HIPS_PREHEAT_HPB_TEMP)), lcd_preheat_hips);
   MENU_ITEM(function, PSTR("PP   -  " STRINGIFY(PP_PREHEAT_HOTEND_TEMP) "/" STRINGIFY(PP_PREHEAT_HPB_TEMP)), lcd_preheat_pp);
   MENU_ITEM(function, PSTR("FLEX -  " STRINGIFY(FLEX_PREHEAT_HOTEND_TEMP) "/" STRINGIFY(FLEX_PREHEAT_HPB_TEMP)), lcd_preheat_flex);

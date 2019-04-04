@@ -13,7 +13,7 @@ GENERAL SETTINGS
 #define DEVELOPER
 
 // Printer name
-#define CUSTOM_MENDEL_NAME "Prusa i3 MK2S"
+#define CUSTOM_MENDEL_NAME "Prusa i3 MK2.4"
 
 // Electronics
 #define MOTHERBOARD BOARD_RAMBO_MINI_1_3
